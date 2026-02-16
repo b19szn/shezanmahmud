@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shezan Mahmud - CS Student at BRAC University">
+    <meta name="author" content="Shezan Mahmud">
+    <title>Shezan Mahmud - Personal Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .intro-content h1 span {
+            background: linear-gradient(135deg, #04c2c9, #6c2cf5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+
+    <header>
+        <nav class="left-nav">
+            <a href="#intro" class="nav-logo">SM</a>
+            <ul class="nav-links">
+                <li><a href="#intro" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mode-toggle" id="modeBtn" title="Toggle light/dark">&#9789;</button>
+        </nav>
+
+        <div class="mob-header">
+            <span class="mob-logo">Shezan Mahmud</span>
+            <button class="mob-btn" id="mobToggle">&#9776;</button>
+        </div>
+        <div class="mob-menu" id="mobMenu">
+            <a href="#intro">Home</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#movies">Movies</a>
+            <a href="#courses">Courses</a>
+            <a href="#links">Links</a>
+            <a href="#contact">Contact</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </header>
+
+    <div class="main-content">
+
+        <section id="intro">
+            <div class="intro-content fade-in">
+                <p class="intro-hello">Hello, World.</p>
+                <h1>I'm <span>Shezan Mahmud.</span></h1>
+                <p class="intro-tagline">
+                    CS undergrad at <a href="https://www.bracu.ac.bd" target="_blank"><b>BRAC
+                            University</b></a>,
+                    Dhaka. Just figuring out how to build cool stuff for the web without breaking production.
+                    <br>Currently diving deep into Machine Learning.
+                </p>
+                <div class="intro-btns">
+                    <a href="#about" class="btn-filled">More About Me</a>
+                    <a href="#contact" class="btn-ghost">Get in Touch</a>
+                </div>
+            </div>
+            <div class="scroll-arrow"><span></span></div>
+        </section>
+
+        <section id="about" class="section">
+            <p class="section-label">About</p>
+            <h2>Let me introduce myself.</h2>
+            <p class="section-sub">A bit about who I am and what keeps me busy.</p>
+
+            <div class="about-grid">
+                <div class="about-photo">
+                    <img src="images/profile.jpg" alt="Shezan Mahmud" class="profile-img">
+                </div>
+                <div class="about-text-block">
+                    <p>
+                        Hi, I'm <strong>Shezan</strong>. I'm currently in my <span class="red-text">11th semester</span>
+                        at
+                        <a href="https://www.bracu.ac.bd" target="_blank"><b>BRAC University</b></a>, which means I've
+                        spent
+                        a significant amount of time debugging code and drinking coffee.
+                        I'm really into <i>web development</i> and <i>machine learning</i>—basically anything that lets
+                        me build something from scratch.
+                    </p>
+                    <p>
+                        When I'm not staring at a terminal, I'm usually out exploring Dhaka with my camera,
+                        getting lost in <b>sci-fi books</b> (huge Dune fan), or playing <b>badminton</b> to stay active.
+                        I'm also hanging out with the <span class="highlight">BRACU Computer Club</span> whenever I can.
+                        Check out my <a href="projects.html">projects page</a> to see what I've been working on lately.
+                    </p>
+
+                    <ul class="profile-list">
+                        <li>
+                            <span class="label">Full Name:</span>
+                            <span class="value">Shezan Mahmud</span>
+                        </li>
+                        <li>
+                            <span class="label">University:</span>
+                            <span class="value"><a href="https://www.bracu.ac.bd" target="_blank">BRAC
+                                    University</a></span>
+                        </li>
+                        <li>
+                            <span class="label">Department:</span>
+                            <span class="value">Computer Science</span>
+                        </li>
+                        <li>
+                            <span class="label">Semester:</span>
+                            <span class="value">11th</span>
+                        </li>
+                        <li>
+                            <span class="label">Location:</span>
+                            <span class="value">Dhaka, Bangladesh</span>
+                        </li>
+                        <li>
+                            <span class="label">Email:</span>
+                            <span class="value">shezan.mahmud@g.bracu.ac.bd</span>
+                        </li>
+                    </ul>
+
+                    <div class="about-btns">
+                        <a href="#contact" class="btn-filled">Hire Me</a>
+                        <a href="hobbies.html" class="btn-ghost">My Hobbies</a>
+                    </div>
+                </div>
+
+                <div class="skills-block">
+                    <h3>Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">HTML5 / CSS3 <span>90%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">JavaScript <span>80%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">Python <span>85%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">Java <span>75%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">C++ <span>70%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">React / Node.js <span>65%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">MySQL <span>72%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:72%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">Git / Linux <span>78%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:78%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="section section-dark">
+            <p class="section-label">Resume</p>
+            <h2>More of my credentials.</h2>
+            <p class="section-sub">My academic background and what I have been up to.</p>
+
+            <div class="resume-grid">
+                <div class="resume-col">
+                    <h3><span class="col-icon">&#127891;</span> Education</h3>
+                    <div class="timeline">
+                        <div class="t-item">
+                            <h4>BSc in Computer Science</h4>
+                            <p class="t-date">Fall 2021 - Present (Expected 2026)</p>
+                            <p class="t-place">BRAC University, Dhaka</p>
+                            <p class="t-desc">Pursuing a Bachelor's degree in Computer Science.</p>
+                        </div>
+                        <div class="t-item">
+                            <h4>HSC (Higher Secondary)</h4>
+                            <p class="t-date">2020</p>
+                            <p class="t-place">Shahid Bulbul Government College, Pabna</p>
+                            <p class="t-desc">GPA: 5.00/5.00 in Science.</p>
+                        </div>
+                        <div class="t-item">
+                            <h4>SSC (Secondary School)</h4>
+                            <p class="t-date">2018</p>
+                            <p class="t-place">Pabna Collectorate Public School &amp; College</p>
+                            <p class="t-desc">GPA: 4.94/5.00 in Science.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-col">
+                    <h3><span class="col-icon">&#128188;</span> Experience &amp; Activities</h3>
+                    <div class="timeline">
+                        <div class="t-item">
+                            <h4>BRACU Computer Club - Executive</h4>
+                            <p class="t-date">2024 - Present</p>
+                            <p class="t-place">BRAC University</p>
+                            <p class="t-desc">Organize workshops and hackathons. Help juniors with programming and web
+                                dev basics.</p>
+                        </div>
+                        <div class="t-item">
+                            <h4>IUPC 2025 Participant</h4>
+                            <p class="t-date">March 2025</p>
+                            <p class="t-place">BRACU Intra-University Contest</p>
+                            <p class="t-desc">Team of 3 members. Placed 12th out of 80 teams. Solved 5 problems in 5
+                                hours.</p>
+                        </div>
+                        <div class="t-item">
+                            <h4>Tech for Good BD - Volunteer</h4>
+                            <p class="t-date">2024</p>
+                            <p class="t-place">NGO</p>
+                            <p class="t-desc">Taught basic computer skills to underprivileged children in rural
+                                Bangladesh.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="quote-bar">
+            <blockquote>
+                The only way to do great work is to love what you do.
+                If you haven't found it yet, keep looking. Don't settle.
+                <p class="said-by">&mdash; Steve Jobs</p>
+            </blockquote>
+        </div>
+
+        <section id="movies" class="section">
+            <p class="section-label">Favorites</p>
+            <h2>My Top 10 Movies</h2>
+            <p class="section-sub">Films I never get tired of rewatching.</p>
+
+            <ol class="movies-list">
+                <li><strong>Inception</strong> (2010) - <em>Christopher Nolan</em></li>
+                <li><strong>The Shawshank Redemption</strong> (1994) - <em>Frank Darabont</em></li>
+                <li><strong>Interstellar</strong> (2014) - <em>Christopher Nolan</em></li>
+                <li><strong>The Dark Knight</strong> (2008) - <em>Christopher Nolan</em></li>
+                <li><strong>Parasite</strong> (2019) - <em>Bong Joon-ho</em></li>
+                <li><strong>Whiplash</strong> (2014) - <em>Damien Chazelle</em></li>
+                <li><strong>The Social Network</strong> (2010) - <em>David Fincher</em></li>
+                <li><strong>Fight Club</strong> (1999) - <em>David Fincher</em></li>
+                <li><strong>Spider-Man: Into the Spider-Verse</strong> (2018) - <em>Bob Persichetti</em></li>
+                <li><strong>Spirited Away</strong> (2001) - <em>Hayao Miyazaki</em></li>
+            </ol>
+        </section>
+
+        <section id="courses" class="section section-dark">
+            <p class="section-label">Academics</p>
+            <h2>Spring 2026 Courses</h2>
+            <p class="section-sub">What I am taking this semester.</p>
+
+            <div class="tbl-wrap">
+                <table class="tbl">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Course</th>
+                            <th>Section</th>
+                            <th>Instructor</th>
+                            <th>Room</th>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Cr</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>CSE 391</b></td>
+                            <td>
+                                Programming for the Internet<br>
+                                <small style="color:rgba(110,110,110,0.6)">HTML, CSS, JS and building real
+                                    web projects throughout the semester.</small>
+                            </td>
+                            <td rowspan="2">01</td>
+                            <td>ADR</td>
+                            <td>FT11-04L</td>
+                            <td>Sun</td>
+                            <td>11:00 AM - 12:20 PM<br>12:30 PM - 1:50 PM</td>
+                            <td style="text-align:center">3</td>
+                        </tr>
+                        <tr>
+                            <td><b>CSE 391L</b></td>
+                            <td>
+                                Lab<br>
+                                <small style="color:rgba(110,110,110,0.6)">Hands-on web development practice.</small>
+                            </td>
+                            <td>TBA</td>
+                            <td>09E-22L</td>
+                            <td>Tue</td>
+                            <td>2:00 PM - 4:50 PM</td>
+                            <td style="text-align:center">0</td>
+                        </tr>
+                        <tr>
+                            <td><b>CSE 422</b></td>
+                            <td>
+                                Artificial Intelligence<br>
+                                <small style="color:rgba(110,110,110,0.6)">Search, knowledge representation, ML
+                                    intro.</small>
+                            </td>
+                            <td rowspan="2">09</td>
+                            <td>ZHS</td>
+                            <td>10B-15C</td>
+                            <td>Sun &amp; Tue</td>
+                            <td>8:00 AM - 9:20 AM</td>
+                            <td style="text-align:center">3</td>
+                        </tr>
+                        <tr>
+                            <td><b>CSE 422L</b></td>
+                            <td>
+                                AI Lab<br>
+                                <small style="color:rgba(110,110,110,0.6)">Practical AI implementations.</small>
+                            </td>
+                            <td>TBA</td>
+                            <td>09F-26L</td>
+                            <td>Fri</td>
+                            <td>11:00 AM - 1:50 PM</td>
+                            <td style="text-align:center">0</td>
+                        </tr>
+                        <tr>
+                            <td><b>CSE 423</b></td>
+                            <td>
+                                Computer Graphics<br>
+                                <small style="color:rgba(110,110,110,0.6)">Rendering, transformations, OpenGL.</small>
+                            </td>
+                            <td rowspan="2">21</td>
+                            <td>RAHA</td>
+                            <td>09B-12C</td>
+                            <td>Thu &amp; Sat</td>
+                            <td>9:30 AM - 10:50 AM</td>
+                            <td style="text-align:center">3</td>
+                        </tr>
+                        <tr>
+                            <td><b>CSE 423L</b></td>
+                            <td>
+                                Graphics Lab<br>
+                                <small style="color:rgba(110,110,110,0.6)">Hands-on graphics programming.</small>
+                            </td>
+                            <td>TBA</td>
+                            <td>09F-24L</td>
+                            <td>Wed</td>
+                            <td>11:00 AM - 1:50 PM</td>
+                            <td style="text-align:center">0</td>
+                        </tr>
+                        <tr>
+                            <td><b>CSE 470</b></td>
+                            <td>
+                                Software Engineering<br>
+                                <small style="color:rgba(110,110,110,0.6)">SDLC, agile, design patterns, team
+                                    projects.</small>
+                            </td>
+                            <td>21</td>
+                            <td>ARIF</td>
+                            <td>09A-07C</td>
+                            <td>Thu &amp; Sat</td>
+                            <td>2:00 PM - 3:20 PM</td>
+                            <td style="text-align:center">3</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="text-align:right"><b>Total</b></td>
+                            <td colspan="2" style="text-align:center; color:#04c2c9"><b>12 credits</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <p class="section-label">Gallery</p>
+            <h2>A Few Snapshots</h2>
+            <p class="section-sub">Photos I like.</p>
+
+            <div class="pics-grid">
+                <div class="pic-card">
+                    <img src="images/snap1.jpg" alt="Ruppur Nuclear Power Plant">
+                    <div class="pic-label">Ruppur Nuclear Power Plant</div>
+                </div>
+                <div class="pic-card">
+                    <img src="images/snap4.jpg" alt="Fresh Coconuts">
+                    <div class="pic-label">Greenery</div>
+                </div>
+                <div class="pic-card">
+                    <img src="images/snap2.jpg" alt="Refreshing Drink">
+                    <div class="pic-label">Chill Vibes</div>
+                </div>
+                <div class="pic-card">
+                    <img src="images/snap3.jpg" alt="Jackfruit Tree">
+                    <div class="pic-label">Nature's Bounty</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="links" class="section section-dark">
+            <p class="section-label">Resources</p>
+            <h2>Links &amp; Resources</h2>
+            <p class="section-sub">Useful websites I visit often.</p>
+
+            <div class="links-grid">
+                <a href="https://www.bracu.ac.bd" target="_blank" class="link-card">
+                    <div class="link-icon">&#127891;</div>
+                    <div>
+                        <div class="link-name">BRAC University</div>
+                        <div class="link-sub">University website</div>
+                    </div>
+                </a>
+                <a href="https://discord.gg/" target="_blank" class="link-card">
+                    <div class="link-icon">&#128172;</div>
+                    <div>
+                        <div class="link-name">My Discord</div>
+                        <div class="link-sub">Class server</div>
+                    </div>
+                </a>
+                <a href="https://github.com/b19szn" target="_blank" class="link-card">
+                    <div class="link-icon">&#128187;</div>
+                    <div>
+                        <div class="link-name">GitHub</div>
+                        <div class="link-sub">Code hosting</div>
+                    </div>
+                </a>
+                <a href="https://stackoverflow.com" target="_blank" class="link-card">
+                    <div class="link-icon">&#128218;</div>
+                    <div>
+                        <div class="link-name">Stack Overflow</div>
+                        <div class="link-sub">Q&amp;A for devs</div>
+                    </div>
+                </a>
+                <a href="https://developer.mozilla.org" target="_blank" class="link-card">
+                    <div class="link-icon">&#128214;</div>
+                    <div>
+                        <div class="link-name">MDN Docs</div>
+                        <div class="link-sub">Web reference</div>
+                    </div>
+                </a>
+                <a href="hobbies.html" class="link-card">
+                    <div class="link-icon">&#127912;</div>
+                    <div>
+                        <div class="link-name">My Hobbies</div>
+                        <div class="link-sub">Fun stuff I do</div>
+                    </div>
+                </a>
+                <a href="projects.html" class="link-card">
+                    <div class="link-icon">&#128736;</div>
+                    <div>
+                        <div class="link-name">My Projects</div>
+                        <div class="link-sub">Things I built</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <p class="section-label">Contact</p>
+            <h2>Let's Chat.</h2>
+            <p class="section-sub">Got a question or just want to say hi? My inbox is open.</p>
+
+            <div class="contact-grid">
+                <div>
+                    <ul class="contact-info-list">
+                        <li>
+                            <span class="ci-icon">&#128205;</span>
+                            <div>
+                                <p class="ci-label">Where to find me</p>
+                                <p class="ci-value">Dhaka, Bangladesh</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="ci-icon">&#128231;</span>
+                            <div>
+                                <p class="ci-label">Email Me At</p>
+                                <p class="ci-value">shezan.mahmud@g.bracu.ac.bd</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="ci-icon">&#127891;</span>
+                            <div>
+                                <p class="ci-label">University</p>
+                                <p class="ci-value"><a href="https://www.bracu.ac.bd" target="_blank">BRAC
+                                        University</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <input type="checkbox" id="success-trigger" class="hidden-trigger">
+
+                <form class="contact-form" onsubmit="return false;">
+                    <div class="form-row">
+                        <div>
+                            <label for="fname">Name</label>
+                            <input type="text" id="fname" name="name" placeholder="Your name" required>
+                        </div>
+                        <div>
+                            <label for="femail">Email</label>
+                            <input type="email" id="femail" name="email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+                    <label for="fsubj">Subject</label>
+                    <input type="text" id="fsubj" name="subject" placeholder="What's up?">
+                    <label for="fmsg">Message</label>
+                    <textarea id="fmsg" name="message" placeholder="Write something..." required></textarea>
+
+
+                    <label for="success-trigger" class="send-btn" style="display:inline-block; text-align:center;">Send
+                        Message &#10148;</label>
+                </form>
+
+                <div class="success-message">
+                    <h3>&#10004; Message Sent Successfully!</h3>
+                    <p>Thanks for reaching out, I'll get back to you soon.</p>
+                    <label for="success-trigger" class="btn-ghost"
+                        style="cursor:pointer; margin-top:15px; display:inline-block;">Send Another</label>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="#intro">Home</a>
+                <a href="#about">About</a>
+                <a href="#resume">Resume</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="projects.html">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <hr>
+            <p>&copy; 2026 Shezan Mahmud. All rights reserved.</p>
+            <p class="page-meta" id="pginfo"></p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.getElementById('pginfo').innerHTML =
+            'Page: ' + window.location.href + ' | Last updated: ' + document.lastModified;
+
+        var modeBtn = document.getElementById('modeBtn');
+        if (localStorage.getItem('darkMode') === 'yes') {
+            document.body.classList.remove('light-mode');
+            modeBtn.innerHTML = '&#9789;';
+        }
+        modeBtn.onclick = function () {
+            document.body.classList.toggle('light-mode');
+            if (document.body.classList.contains('light-mode')) {
+                localStorage.setItem('darkMode', 'no');
+                modeBtn.innerHTML = '&#9728;';
+            } else {
+                localStorage.setItem('darkMode', 'yes');
+                modeBtn.innerHTML = '&#9789;';
+            }
+        };
+
+        var mobToggle = document.getElementById('mobToggle');
+        var mobMenu = document.getElementById('mobMenu');
+        mobToggle.onclick = function () {
+            mobMenu.classList.toggle('open');
+        };
+        var mobLinks = mobMenu.querySelectorAll('a');
+        for (var i = 0; i < mobLinks.length; i++) {
+            mobLinks[i].onclick = function () {
+                mobMenu.classList.remove('open');
+            };
+        }
+    </script>
+
+</body>
+
+</html>
