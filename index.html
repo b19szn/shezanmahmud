@@ -83,7 +83,7 @@
                 </div>
                 <div class="about-text-block">
                     <p>
-                        Hi, I'm <strong>Shezan</strong>. I'm currently in my <span class="red-text">11th semester</span>
+                        Hi, I'm <strong>Shezan</strong>. I'm currently in my <span class="red-text">12th semester</span>
                         at
                         <a href="https://www.bracu.ac.bd" target="_blank"><b>BRAC University</b></a>, which means I've
                         spent
@@ -114,7 +114,7 @@
                         </li>
                         <li>
                             <span class="label">Semester:</span>
-                            <span class="value">11th</span>
+                            <span class="value">12th</span>
                         </li>
                         <li>
                             <span class="label">Location:</span>
@@ -274,121 +274,301 @@
 
         <section id="courses" class="section section-dark">
             <p class="section-label">Academics</p>
-            <h2>Spring 2026 Courses</h2>
-            <p class="section-sub">What I am taking this semester.</p>
+            <h2>Summer 2026 Academics</h2>
+            <p class="section-sub">Coursework, weekly class schedule, and exams for the current semester.</p>
 
-            <div class="tbl-wrap">
-                <table class="tbl">
-                    <thead>
-                        <tr>
-                            <th>Code</th>
-                            <th>Course</th>
-                            <th>Section</th>
-                            <th>Instructor</th>
-                            <th>Room</th>
-                            <th>Day</th>
-                            <th>Time</th>
-                            <th>Cr</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><b>CSE 391</b></td>
-                            <td>
-                                Programming for the Internet<br>
-                                <small style="color:rgba(110,110,110,0.6)">HTML, CSS, JS and building real
-                                    web projects throughout the semester.</small>
-                            </td>
-                            <td rowspan="2">01</td>
-                            <td>ADR</td>
-                            <td>FT11-04L</td>
-                            <td>Sun</td>
-                            <td>11:00 AM - 12:20 PM<br>12:30 PM - 1:50 PM</td>
-                            <td style="text-align:center">3</td>
-                        </tr>
-                        <tr>
-                            <td><b>CSE 391L</b></td>
-                            <td>
-                                Lab<br>
-                                <small style="color:rgba(110,110,110,0.6)">Hands-on web development practice.</small>
-                            </td>
-                            <td>TBA</td>
-                            <td>09E-22L</td>
-                            <td>Tue</td>
-                            <td>2:00 PM - 4:50 PM</td>
-                            <td style="text-align:center">0</td>
-                        </tr>
-                        <tr>
-                            <td><b>CSE 422</b></td>
-                            <td>
-                                Artificial Intelligence<br>
-                                <small style="color:rgba(110,110,110,0.6)">Search, knowledge representation, ML
-                                    intro.</small>
-                            </td>
-                            <td rowspan="2">09</td>
-                            <td>ZHS</td>
-                            <td>10B-15C</td>
-                            <td>Sun &amp; Tue</td>
-                            <td>8:00 AM - 9:20 AM</td>
-                            <td style="text-align:center">3</td>
-                        </tr>
-                        <tr>
-                            <td><b>CSE 422L</b></td>
-                            <td>
-                                AI Lab<br>
-                                <small style="color:rgba(110,110,110,0.6)">Practical AI implementations.</small>
-                            </td>
-                            <td>TBA</td>
-                            <td>09F-26L</td>
-                            <td>Fri</td>
-                            <td>11:00 AM - 1:50 PM</td>
-                            <td style="text-align:center">0</td>
-                        </tr>
-                        <tr>
-                            <td><b>CSE 423</b></td>
-                            <td>
-                                Computer Graphics<br>
-                                <small style="color:rgba(110,110,110,0.6)">Rendering, transformations, OpenGL.</small>
-                            </td>
-                            <td rowspan="2">21</td>
-                            <td>RAHA</td>
-                            <td>09B-12C</td>
-                            <td>Thu &amp; Sat</td>
-                            <td>9:30 AM - 10:50 AM</td>
-                            <td style="text-align:center">3</td>
-                        </tr>
-                        <tr>
-                            <td><b>CSE 423L</b></td>
-                            <td>
-                                Graphics Lab<br>
-                                <small style="color:rgba(110,110,110,0.6)">Hands-on graphics programming.</small>
-                            </td>
-                            <td>TBA</td>
-                            <td>09F-24L</td>
-                            <td>Wed</td>
-                            <td>11:00 AM - 1:50 PM</td>
-                            <td style="text-align:center">0</td>
-                        </tr>
-                        <tr>
-                            <td><b>CSE 470</b></td>
-                            <td>
-                                Software Engineering<br>
-                                <small style="color:rgba(110,110,110,0.6)">SDLC, agile, design patterns, team
-                                    projects.</small>
-                            </td>
-                            <td>21</td>
-                            <td>ARIF</td>
-                            <td>09A-07C</td>
-                            <td>Thu &amp; Sat</td>
-                            <td>2:00 PM - 3:20 PM</td>
-                            <td style="text-align:center">3</td>
-                        </tr>
-                        <tr>
-                            <td colspan="6" style="text-align:right"><b>Total</b></td>
-                            <td colspan="2" style="text-align:center; color:#04c2c9"><b>12 credits</b></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="academics-tabs">
+                <button class="tab-btn active" onclick="switchTab(event, 'tab-courses')">Courses</button>
+                <button class="tab-btn" onclick="switchTab(event, 'tab-routine')">Class Routine</button>
+                <button class="tab-btn" onclick="switchTab(event, 'tab-exams')">Exam Schedule</button>
+            </div>
+
+            <!-- Tab 1: Course Cards Grid -->
+            <div id="tab-courses" class="tab-content active">
+                <div class="course-cards-grid">
+                    <!-- Course 1: CSE 420 -->
+                    <div class="course-card cse420-theme">
+                        <div class="course-card-header">
+                            <span class="course-badge">CSE 420</span>
+                            <span class="credits-badge">3 Credits</span>
+                        </div>
+                        <h3>Compiler Design</h3>
+                        <p class="course-desc">Fundamentals of compiler phases: lexical analyzer, parser, intermediate code generation, and optimization.</p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Theory (Sec 12)</span>
+                                <span class="meta-val">Mon &amp; Wed &bull; 9:30 AM - 10:50 AM</span>
+                                <span class="meta-room">Room 09C-13C &bull; SZD</span>
+                            </div>
+                            <div class="meta-item lab-meta">
+                                <span class="meta-label">Lab (Sec 12)</span>
+                                <span class="meta-val">Tue &bull; 11:00 AM - 1:50 PM</span>
+                                <span class="meta-room">Room 12F-32L &bull; TBA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 2: CSE 422 -->
+                    <div class="course-card cse422-theme">
+                        <div class="course-card-header">
+                            <span class="course-badge">CSE 422</span>
+                            <span class="credits-badge">3 Credits</span>
+                        </div>
+                        <h3>Artificial Intelligence</h3>
+                        <p class="course-desc">Search, knowledge representation, logic, machine learning introduction.</p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Theory (Sec 11)</span>
+                                <span class="meta-val">Thu &amp; Sat &bull; 11:00 AM - 12:20 PM</span>
+                                <span class="meta-room">Room 09A-01C &bull; IBU</span>
+                            </div>
+                            <div class="meta-item lab-meta">
+                                <span class="meta-label">Lab (Sec 11)</span>
+                                <span class="meta-val">Mon &bull; 2:00 PM - 4:50 PM</span>
+                                <span class="meta-room">Room 09B-11L &bull; TBA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course 3: CSE 471 -->
+                    <div class="course-card cse471-theme">
+                        <div class="course-card-header">
+                            <span class="course-badge">CSE 471</span>
+                            <span class="credits-badge">3 Credits</span>
+                        </div>
+                        <h3>System Analysis and Design</h3>
+                        <p class="course-desc">Requirements engineering, SDLC, object-oriented system modeling with UML, DFDs.</p>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Theory (Sec 11)</span>
+                                <span class="meta-val">Sun &amp; Tue &bull; 8:00 AM - 9:20 AM</span>
+                                <span class="meta-room">Room 10A-04C &bull; NAST</span>
+                            </div>
+                            <div class="meta-item lab-meta">
+                                <span class="meta-label">Lab (Sec 11)</span>
+                                <span class="meta-val">Sat &bull; 2:00 PM - 4:50 PM</span>
+                                <span class="meta-room">Room 09F-25L &bull; TBA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Weekly Class Routine -->
+            <div id="tab-routine" class="tab-content">
+                <div class="routine-tbl-wrap">
+                    <table class="routine-tbl">
+                        <thead>
+                            <tr>
+                                <th>Time/Day</th>
+                                <th>Sunday</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>8:00 AM - 9:20 AM</b></td>
+                                <td>
+                                    <div class="routine-block cse471-block">
+                                        <span class="block-code">CSE 471</span>
+                                        <span class="block-instructor">NAST</span>
+                                        <span class="block-room">Room 10A-04C</span>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>
+                                    <div class="routine-block cse471-block">
+                                        <span class="block-code">CSE 471</span>
+                                        <span class="block-instructor">NAST</span>
+                                        <span class="block-room">Room 10A-04C</span>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><b>9:30 AM - 10:50 AM</b></td>
+                                <td>-</td>
+                                <td>
+                                    <div class="routine-block cse420-block">
+                                        <span class="block-code">CSE 420</span>
+                                        <span class="block-instructor">SZD</span>
+                                        <span class="block-room">Room 09C-13C</span>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>
+                                    <div class="routine-block cse420-block">
+                                        <span class="block-code">CSE 420</span>
+                                        <span class="block-instructor">SZD</span>
+                                        <span class="block-room">Room 09C-13C</span>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><b>11:00 AM - 12:20 PM</b></td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>
+                                    <div class="routine-block cse422-block">
+                                        <span class="block-code">CSE 422</span>
+                                        <span class="block-instructor">IBU</span>
+                                        <span class="block-room">Room 09A-01C</span>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>
+                                    <div class="routine-block cse422-block">
+                                        <span class="block-code">CSE 422</span>
+                                        <span class="block-instructor">IBU</span>
+                                        <span class="block-room">Room 09A-01C</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>11:00 AM - 1:50 PM</b></td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>
+                                    <div class="routine-block cse420-block lab-block">
+                                        <span class="block-code">CSE 420L (Lab)</span>
+                                        <span class="block-instructor">TBA</span>
+                                        <span class="block-room">Room 12F-32L</span>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><b>2:00 PM - 4:50 PM</b></td>
+                                <td>-</td>
+                                <td>
+                                    <div class="routine-block cse422-block lab-block">
+                                        <span class="block-code">CSE 422L (Lab)</span>
+                                        <span class="block-instructor">TBA</span>
+                                        <span class="block-room">Room 09B-11L</span>
+                                    </div>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>
+                                    <div class="routine-block cse471-block lab-block">
+                                        <span class="block-code">CSE 471L (Lab)</span>
+                                        <span class="block-instructor">TBA</span>
+                                        <span class="block-room">Room 09F-25L</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Tab 3: Timeline Exam Schedule -->
+            <div id="tab-exams" class="tab-content">
+                <div class="timeline-container">
+                    <!-- Midterm Exams Column -->
+                    <div class="timeline-column">
+                        <h3 class="timeline-header"><span class="header-icon">🏁</span> Midterm Exams</h3>
+                        <div class="timeline-items">
+                            <!-- Midterm 1 -->
+                            <div class="timeline-item cse420-theme">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">Tuesday &bull; July 28, 2026</div>
+                                    <h4>CSE 420 &mdash; Compiler Design</h4>
+                                    <div class="timeline-details">
+                                        <span class="timeline-time">🕒 2:00 PM - 4:00 PM</span>
+                                        <span class="timeline-badge mid-badge">MID</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Midterm 2 -->
+                            <div class="timeline-item cse471-theme">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">Wednesday &bull; July 29, 2026</div>
+                                    <h4>CSE 471 &mdash; System Analysis &amp; Design</h4>
+                                    <div class="timeline-details">
+                                        <span class="timeline-time">🕒 2:00 PM - 4:00 PM</span>
+                                        <span class="timeline-badge mid-badge">MID</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Midterm 3 -->
+                            <div class="timeline-item cse422-theme">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">Thursday &bull; July 30, 2026</div>
+                                    <h4>CSE 422 &mdash; Artificial Intelligence</h4>
+                                    <div class="timeline-details">
+                                        <span class="timeline-time">🕒 11:00 AM - 1:00 PM</span>
+                                        <span class="timeline-badge mid-badge">MID</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Final Exams Column -->
+                    <div class="timeline-column">
+                        <h3 class="timeline-header"><span class="header-icon">🏆</span> Final Exams</h3>
+                        <div class="timeline-items">
+                            <!-- Final 1 -->
+                            <div class="timeline-item cse420-theme">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">Tuesday &bull; Sept 15, 2026</div>
+                                    <h4>CSE 420 &mdash; Compiler Design</h4>
+                                    <div class="timeline-details">
+                                        <span class="timeline-time">🕒 2:00 PM - 4:00 PM</span>
+                                        <span class="timeline-badge final-badge">FINAL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Final 2 -->
+                            <div class="timeline-item cse471-theme">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">Wednesday &bull; Sept 16, 2026</div>
+                                    <h4>CSE 471 &mdash; System Analysis &amp; Design</h4>
+                                    <div class="timeline-details">
+                                        <span class="timeline-time">🕒 2:00 PM - 4:00 PM</span>
+                                        <span class="timeline-badge final-badge">FINAL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Final 3 -->
+                            <div class="timeline-item cse422-theme">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-date">Thursday &bull; Sept 17, 2026</div>
+                                    <h4>CSE 422 &mdash; Artificial Intelligence</h4>
+                                    <div class="timeline-details">
+                                        <span class="timeline-time">🕒 11:00 AM - 1:00 PM</span>
+                                        <span class="timeline-badge final-badge">FINAL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -587,6 +767,19 @@
             mobLinks[i].onclick = function () {
                 mobMenu.classList.remove('open');
             };
+        }
+
+        function switchTab(event, tabId) {
+            var contents = document.querySelectorAll('.tab-content');
+            contents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+            var buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
         }
     </script>
 
